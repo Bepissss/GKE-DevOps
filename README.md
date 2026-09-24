@@ -74,22 +74,28 @@ flowchart LR
 | **Version Control** | GitHub (private) |
 
 ## Website
-![alt text](image-3.png)
-![alt text](image-5.png)
-![alt text](image-6.png)
-![alt text](image-2.png)
+<img width="1916" height="1011" alt="image-3" src="https://github.com/user-attachments/assets/de131c0d-ed1f-4372-907c-851be483bf4c" />
+<img width="1911" height="1010" alt="image-5" src="https://github.com/user-attachments/assets/762163f9-4524-41da-83a9-014e81d5508b" />
+<img width="1912" height="1005" alt="image-6" src="https://github.com/user-attachments/assets/1eda2087-3622-4340-8b98-537fe644a1ed" />
+<img width="1915" height="910" alt="image-2" src="https://github.com/user-attachments/assets/44d2ceb3-6595-44cf-a228-d36ca6b8d636" />
+
 
 ## Rancher
-![rancher](<Screenshot 2026-09-23 160517.png>)
+<img width="1917" height="913" alt="Screenshot 2026-09-23 160517" src="https://github.com/user-attachments/assets/65d6db4f-989f-4d43-ad04-c613c6b9db4d" />
+
 
 ## Jenkins CI/CD
-![jenkins-pipeline](image.png)
+<img width="1911" height="910" alt="image" src="https://github.com/user-attachments/assets/610e5a97-45c5-477c-b73b-515d1661b3de" />
+
 
 ## SonarQube
-![sonarqube](<Screenshot 2026-09-23 151638.png>)
+<img width="1917" height="921" alt="Screenshot 2026-09-23 151638" src="https://github.com/user-attachments/assets/6c40059c-b15d-47ee-a195-a5476fed35c0" />
+
 
 ## Grafana
-![alt text](<Screenshot 2026-09-24 114649.png>)
+<img width="1917" height="1017" alt="Screenshot 2026-09-24 114649" src="https://github.com/user-attachments/assets/730ce597-6d88-4569-9154-4f3d471c5894" />
+
+
 
 
 
