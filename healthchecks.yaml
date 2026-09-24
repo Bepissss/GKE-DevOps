@@ -1,0 +1,62 @@
+apiVersion: networking.gke.io/v1
+kind: HealthCheckPolicy
+metadata:
+  name: grafana-healthcheck
+  namespace: monitoring
+spec:
+  targetRef:
+    group: ""
+    kind: Service
+    name: kube-prometheus-stack-grafana
+  default:
+    checkIntervalSec: 10
+    timeoutSec: 5
+    healthyThreshold: 1
+    unhealthyThreshold: 3
+    config:
+      type: HTTP
+      httpHealthCheck:
+        port: 3000
+        requestPath: /api/health
+---
+apiVersion: networking.gke.io/v1
+kind: HealthCheckPolicy
+metadata:
+  name: prometheus-healthcheck
+  namespace: monitoring
+spec:
+  targetRef:
+    group: ""
+    kind: Service
+    name: kube-prometheus-stack-prometheus
+  default:
+    checkIntervalSec: 10
+    timeoutSec: 5
+    healthyThreshold: 1
+    unhealthyThreshold: 3
+    config:
+      type: HTTP
+      httpHealthCheck:
+        port: 9090
+        requestPath: /prometheus/-/healthy
+---
+apiVersion: networking.gke.io/v1
+kind: HealthCheckPolicy
+metadata:
+  name: alertmanager-healthcheck
+  namespace: monitoring
+spec:
+  targetRef:
+    group: ""
+    kind: Service
+    name: kube-prometheus-stack-alertmanager
+  default:
+    checkIntervalSec: 10
+    timeoutSec: 5
+    healthyThreshold: 1
+    unhealthyThreshold: 3
+    config:
+      type: HTTP
+      httpHealthCheck:
+        port: 9093
+        requestPath: /alertmanager/-/healthy
