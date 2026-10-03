@@ -5,11 +5,7 @@ terraform {
     google = {
       source  = "hashicorp/google"
       version = "~> 6.21.0"
-    }
-    google-beta = {
-      source  = "hashicorp/google-beta"
-      version = "~> 6.21.0"
-    }
+    }    
   }
 
   # ─── Remote State in GCS ──────────────────────────────────────────────────────
@@ -25,8 +21,3 @@ provider "google" {
   credentials = file(var.credentials-file)
 }
 
-provider "google-beta" {
-  project     = var.project-id
-  region      = var.region
-  credentials = file(var.credentials-file)
-}
