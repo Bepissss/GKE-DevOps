@@ -1,11 +1,8 @@
-# ╔═══════════════════════════════════════════════════════════════════════════════╗
-# ║  IMPORTANT: Update these values before running terraform apply              ║
-# ╚═══════════════════════════════════════════════════════════════════════════════╝
 
 # ─── GCP Project Settings ─────────────────────────────────────────────────────
-project-id       = "project-15cbfd8b-99cf-4659-9c8"   # <-- Your GCP project ID
-region           = "asia-southeast1"                     # <-- Your preferred region
-credentials-file = "./keys.json"                     # <-- Path to your service account JSON key
+project-id       = "project-15cbfd8b-99cf-4659-9c8"   
+region           = "asia-southeast1"                     
+credentials-file = "./keys.json"                    
 
 # ─── VPC & Subnet ─────────────────────────────────────────────────────────────
 vpc-name    = "travelbooking-vpc"
