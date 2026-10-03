@@ -38,7 +38,7 @@ spec:
       type: HTTP
       httpHealthCheck:
         port: 9090
-        requestPath: /prometheus/-/healthy
+        requestPath: /prometheus/-/health
 ---
 apiVersion: networking.gke.io/v1
 kind: HealthCheckPolicy
@@ -59,4 +59,4 @@ spec:
       type: HTTP
       httpHealthCheck:
         port: 9093
-        requestPath: /alertmanager/-/healthy
+        requestPath: /alertmanager/-/health
