@@ -12,7 +12,7 @@ vpc-cidr    = "10.0.0.0/16"
 # ─── GKE Cluster ──────────────────────────────────────────────────────────────
 cluster-name    = "travelbooking-gke"
 cluster-zone    = "asia-southeast1-a"
-cluster-version = "1.31"
+cluster-version = "1.36"
 
 # ─── GKE Node Pool ────────────────────────────────────────────────────────────
 pool-name         = "travelbooking-nodepool"
@@ -22,7 +22,7 @@ node-disk-size    = 50
 node-machine-type = "e2-standard-2"
 node-count        = 2
 min-node-count    = 2
-max-node-count    = 5
+max-node-count    = 3
 
 # ─── Artifact Registry ────────────────────────────────────────────────────────
 artifact-registry-name = "travel-booking"
