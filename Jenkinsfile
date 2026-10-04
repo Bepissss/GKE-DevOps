@@ -82,8 +82,7 @@ pipeline {
                     npm install --legacy-peer-deps
 
                     # Run Jest tests with coverage output (lcov for SonarQube)
-                    npx jest --coverage --coverageReporters=lcov --coverageDirectory=coverage \
-                        --passWithNoTests || true
+                    npx jest --coverage --coverageReporters=lcov --coverageDirectory=coverage 
 
                     echo "Frontend tests completed"
                     cd ..
