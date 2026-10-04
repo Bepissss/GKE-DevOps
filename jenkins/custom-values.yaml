@@ -40,14 +40,6 @@ controller:
                             image: "jenkins/inbound-agent:latest"
                             workingDir: "/home/jenkins"
 
-                          - name: "kaniko"
-                            workingDir: "/home/jenkins"
-                            image: "gcr.io/kaniko-project/executor:debug"
-                            imagePullPolicy: "IfNotPresent"
-                            command:
-                              - "/busybox/cat"
-                            tty: true
-
                           - name: "nodejs"
                             workingDir: "/home/jenkins"
                             image: "node:20.10.0"
